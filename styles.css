@@ -481,15 +481,19 @@ button { font: inherit; cursor: pointer; }
 .meta dd a:hover { color: var(--accent); border-color: var(--accent); }
 .meta dd span { color: var(--muted); }
 
-/* form */
+/* form — light card, ink-on-paper, vermilion accent */
 .contact-form {
   display: grid;
   gap: 1rem;
   padding: clamp(1.25rem, 1rem + 1.5vw, 2rem);
-  background: color-mix(in oklab, var(--ink) 96%, var(--accent) 4%);
-  color: var(--paper);
+  background: color-mix(in oklab, var(--paper) 55%, white 45%);
+  color: var(--ink);
+  border: 1px solid var(--rule);
   border-radius: var(--radius);
   align-self: start;
+  box-shadow:
+    0 1px 0 color-mix(in oklab, var(--ink) 4%, transparent),
+    0 30px 60px -40px color-mix(in oklab, var(--ink) 35%, transparent);
 }
 .contact-form .row {
   display: grid; gap: 1rem;
@@ -503,25 +507,27 @@ button { font: inherit; cursor: pointer; }
   font-size: .72rem;
   letter-spacing: .2em;
   text-transform: uppercase;
-  color: color-mix(in oklab, var(--paper) 70%, transparent);
+  color: var(--muted);
 }
 .field input,
 .field textarea {
   font: inherit;
   width: 100%;
   padding: .75rem .85rem;
-  background: color-mix(in oklab, var(--paper) 6%, transparent);
-  color: var(--paper);
-  border: 1px solid color-mix(in oklab, var(--paper) 18%, transparent);
+  background: white;
+  color: var(--ink);
+  border: 1px solid var(--rule);
   border-radius: var(--radius-sm);
-  transition: border-color var(--d-fast), background var(--d-fast);
+  transition: border-color var(--d-fast), box-shadow var(--d-fast);
   font-size: 1rem; /* prevent iOS zoom */
 }
+.field input::placeholder,
+.field textarea::placeholder { color: color-mix(in oklab, var(--muted) 70%, transparent); }
 .field input:focus,
 .field textarea:focus {
   outline: none;
-  border-color: var(--accent);
-  background: color-mix(in oklab, var(--paper) 10%, transparent);
+  border-color: var(--ink);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 18%, transparent);
 }
 .field textarea { resize: vertical; min-height: 110px; }
 
@@ -531,7 +537,7 @@ button { font: inherit; cursor: pointer; }
   margin-top: .25rem;
   justify-self: start;
 }
-.contact-form .btn-primary:hover { background: color-mix(in oklab, var(--accent) 85%, white); }
+.contact-form .btn-primary:hover { background: color-mix(in oklab, var(--accent) 88%, var(--ink) 12%); }
 .contact-form .btn-primary[disabled] { opacity: .6; cursor: progress; }
 
 .hp { position: absolute; left: -9999px; }
@@ -539,11 +545,11 @@ button { font: inherit; cursor: pointer; }
 .form-status {
   min-height: 1.2em;
   font-size: .9rem;
-  color: color-mix(in oklab, var(--paper) 80%, transparent);
+  color: var(--muted);
   margin: 0;
 }
-.form-status.ok    { color: #9adfa9; }
-.form-status.err   { color: #ff9d8a; }
+.form-status.ok    { color: #2d6a3a; }
+.form-status.err   { color: #a8362a; }
 
 /* ------------------------------------------------------------------
    Footer
