@@ -21,20 +21,17 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-## Deploy — GitHub Pages
+## Deploy
 
-1. Push this directory to a (private or public) GitHub repo.
-2. Repo → Settings → Pages → Source: `Deploy from a branch` → `main` / `/` (root).
-3. Set a custom domain if you have one (`www.hromoepilogi.gr`) and add the `CNAME` record.
+The site is hosted on **Cloudflare**, connected to this GitHub repo. Every push to `main` deploys automatically — there is no build step (output directory = `/`).
 
-## Deploy — Cloudflare Pages (alternative)
+Workflow:
 
-```sh
-# from this directory, with wrangler authenticated:
-npx wrangler pages deploy . --project-name=hromoepilogi
-```
+1. Make changes and check them locally (see *Local preview* above).
+2. Commit and push to `main`.
+3. Cloudflare picks up the push and the live site updates within a minute or two. Hard-refresh to bypass the browser cache.
 
-Or wire it up via the dashboard pointing at your GitHub repo (no build command, output directory = `/`).
+The custom domain (`www.hromoepilogi.gr`) is configured in the Cloudflare dashboard, so no `CNAME` file is needed in the repo.
 
 ## Editing content
 
