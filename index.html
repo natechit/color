@@ -70,14 +70,14 @@
 
   <section id="top" class="hero" aria-labelledby="hero-heading">
     <div class="hero-grid">
-      <p class="eyebrow">Ιωάννινα · από το 1963</p>
       <h1 id="hero-heading">
-        Δίνουμε <em>διαφορετικό</em><br/>
+        Από το 1963<br/>
+        δίνουμε <em>διαφορετικό</em><br/>
         χρώμα στην πόλη.
       </h1>
       <p class="lede">
-        Χρώματα, βερνίκια, μονωτικά και εργαλεία — με τη σιγουριά
-        τριών γενεών και ηλεκτρονικό σύστημα ακριβούς χρωματισμού.
+        Χρώματα, βερνίκια, μονωτικά και εργαλεία, με τη σιγουριά
+        τριών γενεών και ηλεκτρονικό σύστημα χρωματισμού.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#contact">Ρωτήστε μας</a>
@@ -85,13 +85,13 @@
       </div>
     </div>
 
-    <aside class="hero-swatches" aria-hidden="true">
-      <div class="swatch s1"><span>01</span><b>Πορφυρό</b></div>
-      <div class="swatch s2"><span>02</span><b>Ώχρα</b></div>
-      <div class="swatch s3"><span>03</span><b>Λαδί</b></div>
-      <div class="swatch s4"><span>04</span><b>Ινδικό</b></div>
-      <div class="swatch s5"><span>05</span><b>Άμμος</b></div>
-    </aside>
+    <figure class="hero-photo">
+      <img src="./assets/shop-1024.jpg"
+           srcset="./assets/shop-1024.jpg 1024w, ./assets/shop-2048.jpg 2048w"
+           sizes="100vw"
+           alt="Το εσωτερικό του καταστήματος Χρωμοεπιλογή στα Ιωάννινα"
+           width="2048" height="1013" />
+    </figure>
   </section>
 
   <section id="story" class="story" aria-labelledby="story-heading">
@@ -99,15 +99,15 @@
     <div class="story-text">
       <h2 id="story-heading">Έξι δεκαετίες δίπλα στον επαγγελματία και τον ιδιώτη.</h2>
       <p>
-        Από το 1963 η οικογένεια <strong>Καρρά</strong> προτείνει λύσεις χρώματος
+        Από το 1963 η <strong>Χρωμοεπιλογή</strong> προτείνει λύσεις χρώματος
         και μόνωσης στα Ιωάννινα. Δουλεύουμε με τους μεγαλύτερους Έλληνες και
         Ευρωπαίους οίκους, επιλέγοντας υλικά που αντέχουν στον χρόνο και στις
         απαιτήσεις του Ηπειρώτικου κλίματος.
       </p>
       <p>
         Στο κατάστημά μας θα βρείτε <strong>ηλεκτρονικό σύστημα χρωματισμού</strong>
-        για να πετύχετε ακριβώς την απόχρωση που έχετε στο μυαλό σας — και
-        άνετο πάρκινγκ για να φύγετε γρήγορα με αυτό που χρειάζεστε.
+        για να πετύχετε ακριβώς την απόχρωση που έχετε στο μυαλό σας.
+        Άνετο πάρκινγκ για να εξυπηρετηθείτε γρήγορα με αυτό που χρειάζεστε.
       </p>
     </div>
   </section>
@@ -121,7 +121,7 @@
       <li>
         <span class="num">01</span>
         <h3>Πλαστικά &amp; οικολογικά χρώματα</h3>
-        <p>Για εσωτερικούς και εξωτερικούς χώρους, σε όλες τις αποχρώσεις της παλέτας RAL & NCS.</p>
+        <p>Για εσωτερικούς και εξωτερικούς χώρους, σε όλες τις αποχρώσεις με ηλεκτρονικό σύστημα χρωματισμού.</p>
       </li>
       <li>
         <span class="num">02</span>
@@ -141,12 +141,7 @@
       <li>
         <span class="num">05</span>
         <h3>Εργαλεία &amp; αξεσουάρ</h3>
-        <p>Ρολά, πινέλα, σπάτουλες, ταινίες, νάιλον — επαγγελματικός εξοπλισμός.</p>
-      </li>
-      <li>
-        <span class="num">06</span>
-        <h3>Ηλεκτρονικός χρωματισμός</h3>
-        <p>Σύστημα ακριβείας: φέρτε ένα δείγμα και φεύγετε με ακριβώς την ίδια απόχρωση.</p>
+        <p>Ρολά, πινέλα, σπάτουλες, ταινίες, νάιλον, επαγγελματικός εξοπλισμός.</p>
       </li>
     </ul>
   </section>
@@ -154,7 +149,7 @@
   <section id="brands" class="brands" aria-labelledby="brands-heading">
     <div class="section-head">
       <p class="eyebrow">Συνεργαζόμαστε με</p>
-      <h2 id="brands-heading">15 κορυφαίοι οίκοι, ένα κατάστημα.</h2>
+      <h2 id="brands-heading">Κορυφαίοι οίκοι,<br/>ένα κατάστημα.</h2>
     </div>
     <ul class="logo-wall" role="list">
       <li><img src="./assets/logos/vivecrhom.jpg" alt="Vivechrom" loading="lazy" width="150" height="150"/></li>
@@ -176,33 +171,38 @@
   </section>
 
   <section id="contact" class="contact" aria-labelledby="contact-heading">
-    <div class="contact-info">
+    <div class="contact-head">
       <p class="eyebrow">Επικοινωνία</p>
-      <h2 id="contact-heading">Περάστε από το κατάστημα ή στείλτε μήνυμα.</h2>
-
-      <dl class="meta">
-        <div>
-          <dt>Διεύθυνση</dt>
-          <dd>
-            <a href="https://www.google.com/maps/search/?api=1&query=%CE%93.+%CE%A0%CE%B1%CF%80%CE%B1%CE%BD%CE%B4%CF%81%CE%AD%CE%BF%CF%85+71%2C+%CE%99%CF%89%CE%AC%CE%BD%CE%BD%CE%B9%CE%BD%CE%B1" target="_blank" rel="noopener">
-              Γ. Παπανδρέου 71<br/>454 45, Ιωάννινα
-            </a>
-          </dd>
-        </div>
-        <div>
-          <dt>Τηλέφωνο</dt>
-          <dd><a href="tel:+302651021443">26510 21443</a></dd>
-        </div>
-        <div>
-          <dt>Email</dt>
-          <dd><a href="mailto:info@hromoepilogi.gr">info@hromoepilogi.gr</a></dd>
-        </div>
-        <div>
-          <dt>Ωράριο</dt>
-          <dd>Δευ, Τετ <span>07:30 – 14:30</span><br/>Τρι, Πεμ, Παρ <span>07:30 – 14:30 &amp; 17:45 – 21:00</span><br/>Σάβ <span>07:30 – 14:00</span><br/>Κυρ <span>Κλειστά</span></dd>
-        </div>
-      </dl>
+      <h2 id="contact-heading">Περάστε από το κατάστημα<br/>ή στείλτε μήνυμα.</h2>
     </div>
+
+    <dl class="meta">
+      <div>
+        <dt>Διεύθυνση</dt>
+        <dd>
+          <a href="https://www.google.com/maps/search/?api=1&query=%CE%93.+%CE%A0%CE%B1%CF%80%CE%B1%CE%BD%CE%B4%CF%81%CE%AD%CE%BF%CF%85+71%2C+%CE%99%CF%89%CE%AC%CE%BD%CE%BD%CE%B9%CE%BD%CE%B1" target="_blank" rel="noopener">
+            Γ. Παπανδρέου 71<br/>454 45, Ιωάννινα
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt>Τηλέφωνο</dt>
+        <dd><a href="tel:+302651021443">26510 21443</a></dd>
+      </div>
+      <div>
+        <dt>Email</dt>
+        <dd><a href="mailto:info@hromoepilogi.gr">info@hromoepilogi.gr</a></dd>
+      </div>
+      <div>
+        <dt>Ωράριο</dt>
+        <dd>Δευ, Τετ <span>07:30 – 14:30</span><br/>Τρι, Πεμ, Παρ <span>07:30 – 14:30 &amp; 17:45 – 21:00</span><br/>Σάβ <span>07:30 – 14:00</span><br/>Κυρ <span>Κλειστά</span></dd>
+      </div>
+    </dl>
+
+    <iframe class="contact-map"
+            title="Χάρτης: Χρωμοεπιλογή, Γ. Παπανδρέου 71, Ιωάννινα"
+            src="https://www.google.com/maps?q=%CE%A7%CE%A1%CE%A9%CE%9C%CE%9F%CE%95%CE%A0%CE%99%CE%9B%CE%9F%CE%93%CE%97+%CE%9A%CE%91%CE%A1%CE%A1%CE%91%CE%A3+%CE%A0%CE%9F%CE%9B%CE%A5%CE%92%CE%99%CE%9F%CE%A3%2C+%CE%9B%CE%B5%CF%89%CF%86.+%CE%93%CE%B5%CF%89%CF%81.+%CE%A0%CE%B1%CF%80%CE%B1%CE%BD%CE%B4%CF%81%CE%AD%CE%BF%CF%85+71%2C+%CE%99%CF%89%CE%AC%CE%BD%CE%BD%CE%B9%CE%BD%CE%B1+454+45&z=17&hl=el&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
 
     <form class="contact-form" id="contact-form" novalidate>
       <div class="field">
