@@ -93,17 +93,10 @@ button { font: inherit; cursor: pointer; }
 
 .brand { display: inline-flex; align-items: center; gap: .65rem; }
 .brand-mark {
-  position: relative;
-  width: 34px; height: 34px;
-  display: inline-block;
+  width: 56px; height: 56px;
+  display: block;
+  border-radius: 50%;
 }
-.brand-mark .dot {
-  position: absolute; top: 7px;
-  width: 20px; height: 20px; border-radius: 50%;
-  mix-blend-mode: multiply;
-}
-.brand-mark .dot-a { left: 0;  background: var(--accent); }
-.brand-mark .dot-b { left: 11px; background: var(--accent-2); }
 .brand-text { display: grid; line-height: 1.05; }
 .brand-name {
   font-family: var(--serif);
