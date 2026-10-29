@@ -30,7 +30,6 @@
   --text-xl:   clamp(1.5rem,  1.2rem  + 1.5vw, 2.1rem);
   --text-2xl:  clamp(2rem,    1.4rem  + 3vw,   3.4rem);
   --text-hero: clamp(2.6rem,  1.2rem  + 7.5vw, 6.4rem);
-  --text-mega: clamp(6rem,    3rem    + 22vw,  22rem);
 
   /* rhythm */
   --gutter:      clamp(1.25rem, 1rem + 2vw, 2.5rem);
@@ -280,13 +279,28 @@ button { font: inherit; cursor: pointer; }
   font-family: var(--serif);
   font-weight: 800;
   font-variation-settings: "opsz" 144;
-  font-size: var(--text-mega);
+  font-size: clamp(4rem, 2rem + 7vw, 8.5rem);
   line-height: 0.82;
+  margin-bottom: clamp(.75rem, .5rem + 1vw, 1.25rem);
   letter-spacing: -0.06em;
   color: transparent;
   -webkit-text-stroke: 1.5px var(--ink);
   text-stroke: 1.5px var(--ink);
   user-select: none;
+}
+/* gold "60 χρόνια" stroke; multiply drops the logo's white
+   background into the paper colour */
+.story-badge {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  justify-self: center;
+  mix-blend-mode: multiply;
+  transform: rotate(-4deg);
+}
+@media (max-width: 899px) {
+  .story-badge { max-width: 380px; }
 }
 .story-text h2 {
   font-family: var(--serif);
