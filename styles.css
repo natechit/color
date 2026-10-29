@@ -504,15 +504,11 @@ button { font: inherit; cursor: pointer; }
 .footer {
   padding: 2rem var(--gutter) calc(2rem + env(safe-area-inset-bottom, 0px));
   border-top: 1px solid var(--rule);
-  display: flex; flex-wrap: wrap;
-  justify-content: space-between; gap: 1rem;
+  text-align: center;
   font-size: .88rem;
   color: var(--muted);
 }
 .footer-brand { color: var(--ink); font-weight: 500; margin-right: 1rem; }
-.footer-meta { display: flex; gap: 1.25rem; flex-wrap: wrap; }
-.footer-meta a { border-bottom: 1px dotted var(--rule); }
-.footer-meta a:hover { color: var(--ink); border-color: var(--ink); }
 
 /* ------------------------------------------------------------------
    Reduced motion
