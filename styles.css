@@ -450,7 +450,7 @@ button { font: inherit; cursor: pointer; }
   .contact-head { grid-area: head; }
   .meta         { grid-area: meta; }
   /* map matches the height of the details list beside it */
-  .contact-map  { grid-area: map; height: 100%; }
+  .contact-map  { grid-area: map; align-self: stretch; height: 100%; min-height: 360px; }
 }
 
 .contact-head h2 {
