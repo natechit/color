@@ -39,7 +39,7 @@ Or wire it up via the dashboard pointing at your GitHub repo (no build command, 
 ## Editing content
 
 - **Vendor logos:** add/remove `<li>` entries inside `.logo-wall` in `index.html`. Drop the file into `assets/logos/`.
-- **Services:** edit the five `<li>` items inside `.service-list`. The wide-screen layout puts all five on one row; if you change the count, adjust the `.service-list` grid in `styles.css`.
+- **Services:** edit the six `<li>` items inside `.service-list`. The layout is 3 × 2, with all six on one row on screens ≥1300px; if you change the count, adjust the `.service-list` grid in `styles.css`.
 - **Hours / address / phone:** update the `<dl class="meta">` block in `index.html` and the JSON-LD (`openingHoursSpecification`) in `<head>`.
 - **Map:** the `.contact-map` iframe uses a keyless Google Maps embed searching for the shop's listing.
 - **Colors:** edit the CSS custom properties at the top of `styles.css` (`--accent`, `--accent-2`, …).
